@@ -1,0 +1,28 @@
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csprojAssemblyReference.cache
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CoreCompileInputs.cache
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\WebHibernate.dll.config
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\WebHibernate.dll
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\WebHibernate.pdb
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\FluentNHibernate.dll
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\Iesi.Collections.dll
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\NHibernate.dll
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\FluentNHibernate.xml
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\Iesi.Collections.xml
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\bin\NHibernate.xml
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CopyComplete
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.dll
+C:\Users\Enrique\source\repos\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.pdb
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\WebHibernate.dll.config
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\WebHibernate.dll
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\WebHibernate.pdb
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\FluentNHibernate.dll
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\Iesi.Collections.dll
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\NHibernate.dll
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\FluentNHibernate.xml
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\Iesi.Collections.xml
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\bin\NHibernate.xml
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csprojAssemblyReference.cache
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CoreCompileInputs.cache
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CopyComplete
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.dll
+C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.pdb
