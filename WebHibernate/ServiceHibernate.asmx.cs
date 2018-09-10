@@ -30,15 +30,22 @@ namespace WebHibernate
 
         }
         [WebMethod]
-        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public string Insertardatos(int id, DateTime fecha_inicio,DateTime fecha_fin,string comentarios,int usuario_id,int tipo_actividad_id,int sql_id,byte automatico,int semaforo_id)
+        public Boolean Insertardatos(DateTime fecha_inicio,DateTime fecha_fin,string comentarios,int usuario_id,int tipo_actividad_id,byte automatico,int semaforo_id)
         {
 
-            Insertar x = new Insertar();
-            x.setDreams(id,fecha_inicio,fecha_fin,comentarios,usuario_id,tipo_actividad_id,sql_id, automatico,semaforo_id);
-            return "t";
+            Boolean a;
 
-        }
+            try
+            {
+
+                Consultas.setDreams(fecha_inicio, fecha_fin, comentarios, usuario_id, tipo_actividad_id, automatico, semaforo_id);
+                a = true;
+            }
+            catch (Exception) { a = false; }
+
+            return a;
+
+            }
 
 
     }

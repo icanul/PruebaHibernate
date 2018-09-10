@@ -15,7 +15,7 @@ namespace WebHibernate.Controladores
 
         }
 
-        public  void  setDreams(int id, DateTime fecha_inicio, DateTime fecha_fin, string comentarios, int usuario_id, int tipo_actividad_id, int sql_id, byte automatico, int semaforo_id)
+        public  void  setDreams(DateTime fecha_inicio, DateTime fecha_fin, string comentarios, int usuario_id, int tipo_actividad_id, int sql_id, byte automatico, int semaforo_id)
         {
           
             using (ISession session = NHibernateSession.openSession())
@@ -24,8 +24,7 @@ namespace WebHibernate.Controladores
                 {
                     using (ITransaction transaction = session.BeginTransaction())
                     {
-                        Dreams ob = new Dreams(){ id=id,
-                                                  fecha_inicio =fecha_inicio,
+                        Dreams ob = new Dreams(){ fecha_inicio =fecha_inicio,
                                                   fecha_fin =fecha_fin,
                                                   comentarios =comentarios,
                                                   usuario_id =usuario_id

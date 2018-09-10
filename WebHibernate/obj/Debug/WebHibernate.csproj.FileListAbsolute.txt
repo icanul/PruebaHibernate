@@ -26,3 +26,17 @@ C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHib
 C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CopyComplete
 C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.dll
 C:\Users\Becario Desarollo\Desktop\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.pdb
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csprojAssemblyReference.cache
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CoreCompileInputs.cache
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.dll
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.pdb
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\WebHibernate.dll.config
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\WebHibernate.dll
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\WebHibernate.pdb
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\FluentNHibernate.dll
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\Iesi.Collections.dll
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\NHibernate.dll
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\FluentNHibernate.xml
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\Iesi.Collections.xml
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\bin\NHibernate.xml
+C:\Users\Enrique\Documents\GitHub\PruebaHibernate\WebHibernate\obj\Debug\WebHibernate.csproj.CopyComplete
