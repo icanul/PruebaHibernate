@@ -6,6 +6,9 @@ using System.Web.Script.Serialization;
 using System.Web.Script.Services;
 using System.Web.Services;
 using WebHibernate.Controladores;
+using WebHibernate.Help;
+using WebHibernate.Models;
+
 namespace WebHibernate
 {
     /// <summary>
@@ -29,21 +32,60 @@ namespace WebHibernate
             return new JavaScriptSerializer().Serialize(z);
 
         }
+
         [WebMethod]
-        public Boolean Insertardatos(DateTime fecha_inicio,DateTime fecha_fin,string comentarios,int usuario_id,int tipo_actividad_id,byte automatico,int semaforo_id)
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public string ConsultarUsuario(int id)
         {
 
-            Boolean a;
+            var z = Consultas.GetDatos(id);
 
-            try
+            return new JavaScriptSerializer().Serialize(z);
+
+        }
+
+        [WebMethod]
+        public String Insertardatos(DateTime fecha_inicio,DateTime fecha_fin,string comentarios,int usuario_id,int tipo_actividad_id,byte automatico,int semaforo_id)
+        {
+
+            IList<Dreams> z = Consultas.GetDatos(usuario_id);
+
+            int tipo = Validar.getFlag(z, tipo_actividad_id, fecha_inicio);
+
+            if (tipo == 1)
             {
+                try
+                {
 
-                Consultas.setDreams(fecha_inicio, fecha_fin, comentarios, usuario_id, tipo_actividad_id, automatico, semaforo_id);
-                a = true;
+                    Consultas.setDreams(fecha_inicio, fecha_fin, comentarios, usuario_id, tipo_actividad_id, automatico, semaforo_id);
+                    tipo = 1;
+                }
+                catch (Exception) { tipo = 3; }
+            } else
+            {
+                tipo = 2;
             }
-            catch (Exception) { a = false; }
 
-            return a;
+            String respuesta = "";
+
+            if(tipo == 1)
+            {
+                respuesta = "Se agrego correctamente el registro";
+            } if (tipo == 2)
+            {
+                respuesta = "El evento no es inactivo";
+            } if (tipo == 3)
+            {
+                respuesta = "No se pudo acceder a la base de datos";
+            } if (tipo == 4)
+            {
+                respuesta = "Si es diferente que todos";
+            } if (tipo == 5)
+            {
+                respuesta = "Hay que actualizar un dato";
+            }
+
+            return respuesta;
 
             }
 

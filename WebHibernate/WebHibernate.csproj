@@ -76,8 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\Consultas.cs" />
-    <Compile Include="Controladores\Insertar.cs" />
     <Compile Include="Helpers\NHibernateSession.cs" />
+    <Compile Include="Help\Validar.cs" />
     <Compile Include="Maps\DreamsMap.cs" />
     <Compile Include="Models\Dreams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

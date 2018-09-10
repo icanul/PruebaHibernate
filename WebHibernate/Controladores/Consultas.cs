@@ -43,6 +43,41 @@ namespace WebHibernate.Controladores
             }
         }
 
+        public static IList<Dreams> GetDatos(int aidi_user)
+        {
+            using (ISession session = NHibernateSession.openSession())
+            {
+                try
+                {
+                    using (ITransaction transaction = session.BeginTransaction())
+                        return NewMethod(aidi_user, session);
+                    // getSumaDeDiferencias(dreams);
+                }
+                catch (Exception e)
+                {
+                    System.Console.WriteLine(e.ToString());
+                    return null;
+                    //errorLog.Error("Error:\n" + e);
+                }
+                finally
+                {
+                    session.Close();
+                }
+
+            }
+        }
+
+        private static IList<Dreams> NewMethod(int aidi_user, ISession session)
+        {
+            DateTime dia;
+            var diaanterior = DateTime.Now.AddDays(-1).ToString("yyyy/MM/dd HH:mm:ss");
+
+            dia = DateTime.Parse(diaanterior);
+
+            var lista = session.QueryOver<Dreams>().Where(x => x.usuario_id == aidi_user).And(x => x.fecha_inicio > dia).List().ToList();
+            return lista;
+        }
+
         public static void setDreams(DateTime fecha_inicio, DateTime fecha_fin, string comentarios, int usuario_id, int tipo_actividad_id, byte automatico, int semaforo_id)
         {
 
