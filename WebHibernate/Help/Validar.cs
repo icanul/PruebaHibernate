@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WebHibernate.Controladores;
 using WebHibernate.Models;
 
 namespace WebHibernate.Help
@@ -19,14 +20,27 @@ namespace WebHibernate.Help
 
             DateTime[] dateTimei = new DateTime[lista.Count];
             DateTime[] dateTimef = new DateTime[lista.Count];
+            int[] ids = new int[lista.Count];
+            String[] comentarios = new string[lista.Count];
+            int[] usuario_id = new int[lista.Count];
+            int[] sql_id = new int[lista.Count];
+            int[] tipo_actividad_id = new int[lista.Count];
+            byte[] automatico = new byte[lista.Count];
+            int[] semaforo = new int[lista.Count];
             int a = 0;
 
             for (int i = 0; i < lista.Count; i++)
             {
 
+                ids[i] = lista[i].id;
                 dateTimei[i] = lista[i].fecha_inicio;
                 dateTimef[i] = lista[i].fecha_fin;
-
+                comentarios[i] = lista[i].comentarios;
+                usuario_id[i] = lista[i].usuario_id;
+                tipo_actividad_id[i] = lista[i].tipo_actividad_id;
+                sql_id[i] = lista[i].sql_id;
+                automatico[i] = lista[i].automatico;
+                semaforo[i] = lista[i].semaforo_id;
             }
 
             if (actividad == 4) {
@@ -38,13 +52,10 @@ namespace WebHibernate.Help
                     if (dateTimei[i] < fecha_inicio && dateTimef[i]>fecha_inicio)
                     {
 
-                        a = 4;
-
-                    } else {
-
-                        a = 5;
+                        Consultas.updateData(ids, dateTimei, fecha_inicio,i);
 
                     }
+                    a = 1;
 
                 }
                 //a = 1; el que ejecuta el insert

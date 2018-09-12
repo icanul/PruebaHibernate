@@ -76,10 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\Consultas.cs" />
+    <Compile Include="Helpers\ConsultaSession.cs" />
     <Compile Include="Helpers\NHibernateSession.cs" />
     <Compile Include="Help\Validar.cs" />
     <Compile Include="Maps\DreamsMap.cs" />
+    <Compile Include="Maps\FechasMap.cs" />
     <Compile Include="Models\Dreams.cs" />
+    <Compile Include="Models\Fechas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceHibernate.asmx.cs">
       <DependentUpon>ServiceHibernate.asmx</DependentUpon>

@@ -43,6 +43,50 @@ namespace WebHibernate.Controladores
             }
         }
 
+        public static Boolean updateData(int[] aidi,DateTime[] dateTimei, DateTime date, int posicion)
+        {
+            using (ISession session = ConsultaSession.openSession())
+            {
+                try
+                {
+                    using (ITransaction transaction = session.BeginTransaction())
+                    {
+                        try
+                        {
+                            var lista = session.QueryOver<Fechas>().Where(x => x.id == aidi[posicion]).SingleOrDefault();
+
+                            var r = session.Load<Fechas>(aidi[posicion]);
+
+                            r.fecha_fin = date;
+
+                            session.Update(r);
+
+                            transaction.Commit();
+
+                        }
+
+                        catch (Exception i)
+                        {
+
+                            Console.WriteLine("erroe", i);
+                        }
+                    }
+                    // getSumaDeDiferencias(dreams);
+                }
+                catch (Exception e)
+                {
+                    System.Console.WriteLine(e.ToString());
+                    //errorLog.Error("Error:\n" + e);
+                }
+                finally
+                {
+                    session.Close();
+                }
+
+            }
+            return true;
+        }
+
         public static IList<Dreams> GetDatos(int aidi_user)
         {
             using (ISession session = NHibernateSession.openSession())

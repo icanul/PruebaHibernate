@@ -61,9 +61,6 @@ namespace WebHibernate
                     tipo = 1;
                 }
                 catch (Exception) { tipo = 3; }
-            } else
-            {
-                tipo = 2;
             }
 
             String respuesta = "";
